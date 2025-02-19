@@ -1,3 +1,9 @@
+/*
+3. Implemente um script JavaScript que solicite ao usuário um número inteiro 
+positivo. Assim que o usuário digitar um valor válido calcule o fatorial do 
+mesmo e exiba o resultado em uma janela de alerta.
+*/
+
 let numInteiro;
 do{
     numInteiro = prompt("Insira um número:");
