@@ -13,8 +13,9 @@ function atualizarRelogio() {
     const segundos = dataAtual.getSeconds();
 
     
-    const corpo = document.getElementById('corpo');
-    corpo.textContent = horas + ":" + minutos + ":" + segundos;
+    document.getElementById('horas').textContent = horas;
+    document.getElementById('minutos').textContent = minutos;
+    document.getElementById('segundos').textContent = segundos;
 
     
     setTimeout(atualizarRelogio, 1000);

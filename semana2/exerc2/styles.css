@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0a0a0a; /* Preto profundo para um visual discreto */
+    font-family: 'Roboto Mono', monospace; /* Fonte monoespaçada para um estilo técnico */
+    color: #ffffff;
+    overflow: hidden;
+}
+
+#relogio {
+    font-size: 3rem;
+    color: #00ff00; /* Verde clássico, reminiscente de terminais antigos */
+    text-shadow: 0 0 5px #00ff00; /* Sombra sutil para um efeito de brilho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+
+}
+
+.separador {
+    margin: 0 10px;
+    color: #00ff00; /* Verde para os separadores */
+    animation: piscar 1.5s infinite;
+}
+
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+#horas, #minutos {
+    color: #00ff00; /* Verde para horas e minutos */
+}
+

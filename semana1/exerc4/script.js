@@ -9,7 +9,13 @@ por visitar esta página”.
 let dado = prompt("Digite algo:")
 
 if (confirm("Deseja verificar o tipo de dado informado?")) {
-    document.write("O dado informado é do tipo " + typeof(dado))
+    
+    if (!isNaN(dado)) {
+        document.write("O dado informado é do tipo Number." )
+    } else {
+        document.write("O dado informado é do tipo String")
+    }
+
 } else {
     document.write("Obrigado por visitar esta página")
 }
