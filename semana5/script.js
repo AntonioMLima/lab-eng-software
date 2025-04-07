@@ -14,6 +14,7 @@ divTotal.className = "col-6 text-center";
 
 const h3Total = document.createElement("h3");
 h3Total.textContent = "Total";
+h3Total.style.userSelect = "none"
 h3Total.className = "fw-normal"
 divTotal.appendChild(h3Total);
 
@@ -42,6 +43,7 @@ const contador = document.createElement("div");
 contador.className = "border rounded";
 contador.style.width = "10vh";
 contador.textContent = 0;
+conteudo.style.userSelect = "none";
 
 divContador.appendChild(contador);
 divSegundaLinha.appendChild(divContador);
@@ -139,9 +141,12 @@ divContH.className = "col-6 text-center";
 const tituloContadorH = document.createElement("h3");
 tituloContadorH.className = "fs-5 fw-normal";
 tituloContadorH.textContent = "Homens";
+tituloContadorH.style.userSelect = "none";
 const contadorH = document.createElement("div")
 contadorH.className = "border rounded";
 contadorH.textContent = 0;
+contadorH.style.userSelect = "none";
+
 
 divContH.appendChild(tituloContadorH);
 divContH.appendChild(contadorH);
@@ -151,9 +156,13 @@ divContM.className = "col-6 text-center";
 const tituloContadorM = document.createElement("h3");
 tituloContadorM.className = "fs-5 fw-normal";
 tituloContadorM.textContent = "Mulheres";
+tituloContadorM.style.userSelect = "none";
+
 const contadorM = document.createElement("div");
 contadorM.className = "border rounded";
 contadorM.textContent = 0;
+contadorM.style.userSelect = "none";
+
 
 divContM.appendChild(tituloContadorM)
 divContM.appendChild(contadorM)
